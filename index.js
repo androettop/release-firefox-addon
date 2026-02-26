@@ -31966,7 +31966,7 @@ async function run() {
         if (compatibilityAndroid ||
             compatibilityAndroidMin ||
             compatibilityAndroidMax) {
-            compatibility.firefox_android = {
+            compatibility.android = {
                 max: compatibilityAndroidMax,
                 min: compatibilityAndroidMin,
             };
