@@ -15,6 +15,10 @@ async function run(): Promise<void> {
     core.getInput("compatibility-firefox-min") || undefined;
   const compatibilityFirefoxMax =
     core.getInput("compatibility-firefox-max") || undefined;
+  const compatibilityAndroidMin =
+    core.getInput("compatibility-android-min") || undefined;
+  const compatibilityAndroidMax =
+    core.getInput("compatibility-android-max") || undefined;
   const license = core.getInput("license") || undefined;
   const releaseNote = core.getInput("release-note");
   const channel = core.getInput("channel") || undefined;
@@ -66,14 +70,21 @@ async function run(): Promise<void> {
 
   let version = await client.getVersionOrUndefined(addonId, upload.version);
   if (typeof version === "undefined") {
+    const compatibility: Record<string, { min?: string; max?: string }> = {
+      firefox: {
+        max: compatibilityFirefoxMax,
+        min: compatibilityFirefoxMin,
+      },
+    };
+    if (compatibilityAndroidMin || compatibilityAndroidMax) {
+      compatibility.firefox_android = {
+        max: compatibilityAndroidMax,
+        min: compatibilityAndroidMin,
+      };
+    }
     version = await client.createVersion(addonId, {
       approval_notes: approvalNote,
-      compatibility: {
-        firefox: {
-          max: compatibilityFirefoxMax,
-          min: compatibilityFirefoxMin,
-        },
-      },
+      compatibility,
       license: license,
       release_notes: {
         "en-US": releaseNote,
