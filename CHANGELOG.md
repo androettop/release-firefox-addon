@@ -6,7 +6,7 @@
 ### Features
 
 * add compatibility-android boolean input for Firefox for Android support ([69f4a09](https://github.com/androettop/release-firefox-addon/commit/69f4a09149597c7a5a74ebb64e288e0e8f69a5ff))
-* add support for Android releases via firefox_android compatibility ([575c09d](https://github.com/androettop/release-firefox-addon/commit/575c09d9fc07fa09e6957f943ee34b1d1942f419))
+* add support for Android releases via android compatibility ([575c09d](https://github.com/androettop/release-firefox-addon/commit/575c09d9fc07fa09e6957f943ee34b1d1942f419))
 * bump node version ([#18](https://github.com/androettop/release-firefox-addon/issues/18)) ([8c22321](https://github.com/androettop/release-firefox-addon/commit/8c2232194688b81a0f775e015109ff02f75812f2))
 * Initial experimental release ([e156bfe](https://github.com/androettop/release-firefox-addon/commit/e156bfed1025c760ed3ddcfab16a3dc6c8d70a22))
 

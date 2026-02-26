@@ -82,7 +82,7 @@ async function run(): Promise<void> {
       compatibilityAndroidMin ||
       compatibilityAndroidMax
     ) {
-      compatibility.firefox_android = {
+      compatibility.android = {
         max: compatibilityAndroidMax,
         min: compatibilityAndroidMin,
       };
