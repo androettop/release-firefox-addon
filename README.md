@@ -52,6 +52,7 @@ All supported options are the following:
 | `compatibility-firefox-max` | Maximum version of Firefox that the version of the add-on is compatible with.                                                            |          |          |
 | `compatibility-android-min` | Minimum version of Firefox for Android that the version is compatible with.                                                              |          |          |
 | `compatibility-android-max` | Maximum version of Firefox for Android that the version of the add-on is compatible with.                                                |          |          |
+| `compatibility-android`     | Set to `"true"` to include Firefox for Android compatibility without specifying a version range.                                         |          | `false`  |
 | `license`                   | License of the version.  You can see available licenses [here](https://addons-server.readthedocs.io/en/latest/topics/api/licenses.html). |          |          |
 | `release-note`              | Information about changes in the new version.  Note that this field supports only locale "en-US".                                        |          |          |
 | `channel`                   | 'Channel to publish the version.  This field supports only "listed" and "unlisted".                                                      |          | `listed` |

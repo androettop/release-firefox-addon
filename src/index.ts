@@ -19,6 +19,7 @@ async function run(): Promise<void> {
     core.getInput("compatibility-android-min") || undefined;
   const compatibilityAndroidMax =
     core.getInput("compatibility-android-max") || undefined;
+  const compatibilityAndroid = core.getBooleanInput("compatibility-android");
   const license = core.getInput("license") || undefined;
   const releaseNote = core.getInput("release-note");
   const channel = core.getInput("channel") || undefined;
@@ -76,7 +77,11 @@ async function run(): Promise<void> {
         min: compatibilityFirefoxMin,
       },
     };
-    if (compatibilityAndroidMin || compatibilityAndroidMax) {
+    if (
+      compatibilityAndroid ||
+      compatibilityAndroidMin ||
+      compatibilityAndroidMax
+    ) {
       compatibility.firefox_android = {
         max: compatibilityAndroidMax,
         min: compatibilityAndroidMin,
