@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.4.0](https://github.com/androettop/release-firefox-addon/compare/release-firefox-addon-v0.3.0...release-firefox-addon-v0.4.0) (2026-02-26)
+
+
+### Features
+
+* add compatibility-android boolean input for Firefox for Android support ([69f4a09](https://github.com/androettop/release-firefox-addon/commit/69f4a09149597c7a5a74ebb64e288e0e8f69a5ff))
+* add support for Android releases via firefox_android compatibility ([575c09d](https://github.com/androettop/release-firefox-addon/commit/575c09d9fc07fa09e6957f943ee34b1d1942f419))
+* bump node version ([#18](https://github.com/androettop/release-firefox-addon/issues/18)) ([8c22321](https://github.com/androettop/release-firefox-addon/commit/8c2232194688b81a0f775e015109ff02f75812f2))
+* Initial experimental release ([e156bfe](https://github.com/androettop/release-firefox-addon/commit/e156bfed1025c760ed3ddcfab16a3dc6c8d70a22))
+
+
+### Bug Fixes
+
+* fix actions import ([08d2c1d](https://github.com/androettop/release-firefox-addon/commit/08d2c1ddfe342ae437c489b20e9bf99d49550e5c))
+* fix incorrect action.yml ([57dc0a1](https://github.com/androettop/release-firefox-addon/commit/57dc0a1fcd39306e0ba802b765d5c110d6af0bcf))
+* fix request error ([#21](https://github.com/androettop/release-firefox-addon/issues/21)) ([9eb188a](https://github.com/androettop/release-firefox-addon/commit/9eb188a8ce93a82ba38960e99c508026422121ad))
+* Rename package ([d0864e9](https://github.com/androettop/release-firefox-addon/commit/d0864e9f13dd002bd6c4ef63b460aacbcc38127f))
+* sign published tags and commits ([#16](https://github.com/androettop/release-firefox-addon/issues/16)) ([9ae1f08](https://github.com/androettop/release-firefox-addon/commit/9ae1f0888f31dbe7151168c2e6f237214053bc79))
+* update android app name ([53bca8d](https://github.com/androettop/release-firefox-addon/commit/53bca8d162fcede9c36f21aed6746419a289f46e))
+* update source upload to use license var ([#12](https://github.com/androettop/release-firefox-addon/issues/12)) ([b892ced](https://github.com/androettop/release-firefox-addon/commit/b892ced1f2c353b3cd5e73d404e2e872bb0fc7b9))
+
 ## [0.3.0](https://github.com/androettop/release-firefox-addon/compare/release-firefox-addon-v0.2.1...release-firefox-addon-v0.3.0) (2026-02-26)
 
 
