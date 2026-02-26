@@ -1,4 +1,4 @@
-name: 'Release Firefox addon'
+name: 'Release Firefox addon (Android Support)'
 description: 'Release a Firefox add-on to addons.mozilla.org by uploading a zip file with optional source file'
 author: "Shin'ya Ueoka"
 
