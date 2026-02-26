@@ -1,5 +1,5 @@
 <p>
-  <a href="https://github.com/browser-actions/release-firefox-addon/actions/workflows/release.yml"><img alt="typescript-action status" src="https://github.com/browser-actions/release-firefox-addon/actions/workflows/release.yml/badge.svg"></a>
+  <a href="https://github.com/androettop/release-firefox-addon/actions/workflows/release.yml"><img alt="typescript-action status" src="https://github.com/androettop/release-firefox-addon/actions/workflows/release.yml/badge.svg"></a>
 </p>
 
 # release-firefox-addon
@@ -12,7 +12,7 @@ The minimal usage is as follows:
 
 ```yaml
 steps:
-- uses: browser-actions/release-firefox-addon@latest
+- uses: androettop/release-firefox-addon@latest
   with:
     addon-id: "please specify your add-on in number or UUID format, or add-on name"
     addon-path: "path/to/your/addon.zip"
