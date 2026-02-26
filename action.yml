@@ -17,6 +17,13 @@ inputs:
     description: 'Minimum version of Firefox that the version is compatible with'
   compatibility-firefox-max:
     description: 'Maximum version of Firefox that the version of the add-on is compatible with'
+  compatibility-android-min:
+    description: 'Minimum version of Firefox for Android that the version is compatible with'
+  compatibility-android-max:
+    description: 'Maximum version of Firefox for Android that the version of the add-on is compatible with'
+  compatibility-android:
+    description: 'Whether the add-on is compatible with Firefox for Android.  Set to "true" to include Firefox for Android without specifying a version range.'
+    default: 'false'
   license:
     description: 'License of the version'
   release-note:
